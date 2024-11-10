@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฟอร์มสมัครสมาชิกห้องสมุด</title>
+    
+</head>
+<body>
+
+<div class="form-container">
+    <h2>ฟอร์มสมัครสมาชิกห้องสมุด</h2>
+    <form action="submit_form.php" method="post">
+        <div class="form-group">
+            <label for="name">ชื่อ - นามสกุล <span class="required">*</span></label>
+            <input type="text" id="name" name="name" required placeholder="ภาษาไทยและภาษาอังกฤษ">
+        </div>
+        <div class="form-group">
+            <label for="gender">เพศ <span class="required">*</span></label>
+            <select id="gender" name="gender" required>
+                <option value="">เลือกเพศ</option>
+                <option value="male">ชาย</option>
+                <option value="female">หญิง</option>
+                <option value="other">อื่นๆ</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="student_id">รหัสนักศึกษา <span class="required">*</span></label>
+            <input type="text" id="student_id" name="student_id" required>
+        </div>
+        <div class="form-group">
+            <label for="faculty">คณะที่ศึกษา <span class="required">*</span></label>
+            <input type="text" id="faculty" name="faculty" required>
+        </div>
+        <div class="form-group">
+            <label for="email">ที่อยู่อีเมล <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required placeholder="example@example.com">
+        </div>
+        <div class="form-group">
+            <label for="birthdate">วันเดือนปีเกิด <span class="required">*</span></label>
+            <input type="date" id="birthdate" name="birthdate" required>
+        </div>
+        <div class="form-group">
+            <label for="interest">ประเภทของหนังสือที่สนใจ</label>
+            <input type="text" id="interest" name="interest">
+        </div>
+        <div class="form-group">
+            <label for="accept_info">ความต้องการรับข่าวสารข้อมูลสุขภาพทางอีเมลหรือไม่</label>
+            <select id="accept_info" name="accept_info">
+                <option value="yes">ต้องการ</option>
+                <option value="no">ไม่ต้องการ</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="สมัครสมาชิก">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
